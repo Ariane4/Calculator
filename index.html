@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section id="Calculator">
+        <form id="AusgabeFeld" action="">
+            <label for="Ausgabe">Ergebnis</label>
+            <input name="Ausgabe" type="text" id="Ausgabe">
+        </form>
+        <article class="Reihe1">
+            <button id="Multi" onclick="getNumber('*')" >*</button>
+            <button id="Divide" onclick="getNumber('/')" >/</button>
+            <button id="Substract" onclick="getNumber('-')" >-</button>
+            <button id="Addition" onclick="getNumber('+')" >+</button>
+        </article>
+        <article class="Reihe2">
+            <button id="Comma" onclick="getNumber(',')" >,</button>
+            <button id="Nine" onclick="getNumber(9)" >9</button>
+            <button id="Eight" onclick="getNumber(8)">8</button>
+            <button id="Seven" onclick="getNumber(7)" >7</button>
+        </article>
+        <article class="Reihe3">
+            <button id="Six" onclick="getNumber(6)" >6</button>
+            <button id="Five" onclick="getNumber(5)" >5</button>
+            <button id="Four" onclick="getNumber(4)" >4</button>
+            <button id="Three" onclick="getNumber(3)" >3</button>
+        </article>
+        <article class="Reihe4">
+            <button id="Two" onclick="getNumber(2)" >2</button>
+            <button id="One" onclick="getNumber(1)" >1</button>
+            <button id="Null" onclick="getNumber(0)" >0</button>
+            <button id="Equal" onclick="calcul()" >=</button>
+        </article>
+        <article>
+            <button id="CC" onclick="clearOutput()" >C</button>
+        </article>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
